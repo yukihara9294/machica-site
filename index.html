@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Machica | 現場を可視化し、意思決定を加速する3DGSビューワー</title>
+    <meta
+      name="description"
+      content="Machicaは、3DGS（写真に近い3D空間）に設計モデルやコメントを重ね、ブラウザで共有できる3Dビューワーです。現場確認、進捗共有、合意形成を支援します。"
+    />
+    <link rel="canonical" href="https://machica.wan-hiroshima.jp/" />
+    <meta name="theme-color" content="#073d8f" />
+    <meta property="og:site_name" content="Machica" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://machica.wan-hiroshima.jp/" />
+    <meta property="og:title" content="Machica | 現場を可視化し、意思決定を加速する3DGSビューワー" />
+    <meta
+      property="og:description"
+      content="写真に近い3D空間、設計モデル、コメント、資料を同じ画面で扱い、関係者が同じ視点で確認できます。"
+    />
+    <meta property="og:image" content="assets/images/ogp-machica.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Machicaの3DGSビューアー紹介サムネイル" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Machica | 現場を可視化し、意思決定を加速する3DGSビューワー" />
+    <meta
+      name="twitter:description"
+      content="写真に近い3D空間、設計モデル、コメント、資料を同じ画面で扱い、関係者が同じ視点で確認できます。"
+    />
+    <meta name="twitter:image" content="assets/images/ogp-machica.png" />
+    <link rel="icon" href="assets/favicons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#hero" aria-label="Machica トップへ">
+        <img class="brand-logo" src="assets/images/machica-logo-blue.png" alt="Machica" />
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="#features">機能</a>
+        <a href="#scenes">活用シーン</a>
+        <a href="#video">動画</a>
+        <a href="#partners">パートナー募集</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <a class="header-cta" href="#contact">資料請求</a>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <picture class="hero-media" aria-hidden="true">
+          <source srcset="assets/images/hero-machica-mobile.png" media="(max-width: 640px)" />
+          <source srcset="assets/images/hero-machica-main-v2.png" media="(min-width: 641px)" />
+          <img src="assets/images/hero-machica-main-v2.png" alt="" fetchpriority="high" />
+        </picture>
+        <div class="hero-network" aria-hidden="true"></div>
+        <div class="section-inner hero-grid">
+          <div class="hero-copy">
+            <h1>3DGSビューワー<br /><span>「Machica」</span></h1>
+            <p class="hero-lead">現場を可視化し、意思決定を加速する。</p>
+            <p class="hero-text">
+              Machicaは、3DGS（写真に近い3D空間）に設計モデルやコメントを重ね、ブラウザで共有できる3Dビューワーです。
+            </p>
+            <ul class="hero-points" aria-label="Machicaの主な特徴">
+              <li>現場を写真に近い3D空間で確認</li>
+              <li>設計モデルを重ねて比較</li>
+              <li>コメントと資料を3D上で共有</li>
+              <li>URLだけで関係者に共有</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">資料請求する</a>
+              <button class="btn btn-secondary video-open" type="button">デモ動画を見る</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits">
+        <div class="section-inner">
+          <div class="feature-strip" aria-label="Machicaの代表機能">
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="3D空間表示" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z" />
+                <path d="m4 12 8 4.5 8-4.5" />
+                <path d="m4 16.5 8 4.5 8-4.5" />
+              </svg>
+              <h2>3D空間表示</h2>
+              <p>写真に近い3D空間で現場を確認</p>
+            </article>
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="設計モデル表示" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+                <path d="m2 12 10 5 10-5" />
+                <path d="m2 17 10 5 10-5" />
+              </svg>
+              <h2>設計モデル表示</h2>
+              <p>設計モデルを現況に重ねて確認</p>
+            </article>
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="コメント・資料共有" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z" />
+                <path d="M8 8h8" />
+                <path d="M8 12h6" />
+              </svg>
+              <h2>コメント・資料共有</h2>
+              <p>指摘や資料を3D上に残して共有</p>
+            </article>
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="距離計測" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="m16 2 6 6L8 22l-6-6L16 2Z" />
+                <path d="m7 15 2 2" />
+                <path d="m10 12 2 2" />
+                <path d="m13 9 2 2" />
+                <path d="m16 6 2 2" />
+              </svg>
+              <h2>距離計測</h2>
+              <p>3D空間上で距離を確認</p>
+            </article>
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="URL共有" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M10 13a5 5 0 0 0 7.1.5l2.4-2.4a5 5 0 0 0-7.1-7.1L11 5.4" />
+                <path d="M14 11a5 5 0 0 0-7.1-.5l-2.4 2.4a5 5 0 0 0 7.1 7.1l1.4-1.4" />
+              </svg>
+              <h2>URL共有</h2>
+              <p>見ている視点をそのまま共有</p>
+            </article>
+            <article>
+              <svg class="feature-icon site-icon" data-icon-label="ブラウザ閲覧" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="12" rx="2" />
+                <path d="M8 20h8" />
+                <path d="M12 16v4" />
+              </svg>
+              <h2>ブラウザ閲覧</h2>
+              <p>専用アプリなしで閲覧</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="video-section section-blue">
+        <div class="section-inner split">
+          <div class="section-copy">
+            <h2>
+              <span class="heading-line">実空間にモデルを</span><span class="heading-line">重ね、</span><span class="heading-line">配置後の見え方を確認。</span>
+            </h2>
+            <p>
+              実際の画面操作を短い動画で確認できます。現場の3D空間を動かしながら、設計モデルや設備の見え方をブラウザ上で検討できます。
+            </p>
+            <button class="btn btn-light video-open" type="button">動画を大きく見る</button>
+          </div>
+          <button class="video-card video-open" type="button" aria-label="Machicaデモ動画を再生">
+            <img src="assets/images/feature/model-overlay-v2.png" alt="Machicaで設計モデルを重ねて確認する画面" />
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <section id="problem" class="problem">
+        <div class="section-inner">
+          <div class="section-heading">
+            <h2><span class="heading-line">こんなお悩み</span><span class="heading-line">ありませんか？</span></h2>
+            <p>写真、図面、メモが分かれていると、確認と共有に時間がかかります。</p>
+          </div>
+          <div class="problem-grid">
+            <article>
+              <span class="problem-number">01</span>
+              <h3>現地確認に時間がかかる</h3>
+              <p>移動や日程調整が多く、関係者全員で同じ場所を見るまでに時間がかかりやすい。</p>
+            </article>
+            <article>
+              <span class="problem-number">02</span>
+              <h3>関係者で認識がずれる</h3>
+              <p>写真や図面だけでは、どこの話をしているのか伝わりにくい場面があります。</p>
+            </article>
+            <article>
+              <span class="problem-number">03</span>
+              <h3>完成後の見え方が想像しづらい</h3>
+              <p>現況と設計情報を別々に見るため、判断や説明に手戻りが生まれやすい。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-pale">
+        <div class="section-inner split">
+          <div class="section-copy">
+            <h2>
+              <span class="heading-line">現況3Dと</span><span class="heading-line">完成イメージを、</span><span class="heading-line">同じ画面で確認。</span>
+            </h2>
+            <p>
+              Machicaは、現場や施設を写真に近い3D空間として再現し、設計モデル、コメント、資料、確認位置を同じ画面で扱えるビューワーです。
+            </p>
+            <p>
+              現地に行かなくても、関係者が同じ視点で状況を確認できます。確認した場所をそのまま共有できるため、説明や合意形成を進めやすくなります。
+            </p>
+            <a class="btn btn-primary" href="#features">機能を見る</a>
+          </div>
+          <figure class="framed-media">
+            <img src="assets/images/feature/site-view-v2.png" alt="Machicaで現場を写真に近い3D空間として確認する画面" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="scenes" class="scenes">
+        <div class="section-inner">
+          <div class="section-heading">
+            <h2>活用シーン</h2>
+            <p>建設、維持管理、開発、防災まで、同じ視点で話したい場面に使えます。</p>
+          </div>
+          <div class="scene-grid">
+            <article>
+              <img src="assets/images/use-cases/construction-v3.png" alt="建設現場の施工管理イメージ" />
+              <div>
+                <h3>建設・土木</h3>
+                <p>施工管理、進捗確認、検査対応、出来形確認の効率化。</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/images/use-cases/infrastructure-v3.png" alt="インフラや公共施設の維持管理イメージ" />
+              <div>
+                <h3>インフラ・公共施設</h3>
+                <p>点検・維持管理、災害対応、長寿命化計画の検討。</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/images/use-cases/development-v3.png" alt="不動産開発や景観検討のイメージ" />
+              <div>
+                <h3>不動産・開発</h3>
+                <p>開発計画の合意形成、近隣説明、景観検討。</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/images/use-cases/disaster-v3.png" alt="防災や復旧計画の確認イメージ" />
+              <div>
+                <h3>防災・危機管理</h3>
+                <p>被害状況の可視化、復旧計画の立案・共有。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features section-blue">
+        <div class="section-inner">
+          <div class="section-heading align-left">
+            <h2>
+              <span class="heading-line">現場確認に必要な</span><span class="heading-line">情報を、</span><span class="heading-line">ひとつの画面へ。</span>
+            </h2>
+            <p>見える、重ねる、残す、共有する。確認作業を前に進めるための基本機能をまとめています。</p>
+          </div>
+          <div class="feature-list">
+            <article><strong>3D現場閲覧</strong><span>現地に近い見え方で状況を確認</span></article>
+            <article><strong>設計モデル表示</strong><span>完成イメージや設備モデルを重ねて表示</span></article>
+            <article><strong>コメント・返信・添付</strong><span>指摘や資料を見ている場所に残す</span></article>
+            <article><strong>距離計測</strong><span>3D空間上で距離を確認</span></article>
+            <article><strong>URL共有</strong><span>見ている視点をそのまま共有</span></article>
+            <article><strong>視点保存</strong><span>よく見る確認位置を保存</span></article>
+            <article><strong>複数シーン切り替え</strong><span>場所や状態を切り替えて比較</span></article>
+            <article><strong>元写真表示</strong><span>3Dの元になった写真も確認</span></article>
+            <article><strong>公開範囲設定</strong><span>用途に合わせて共有先を調整</span></article>
+            <article><strong>コメント一覧</strong><span>確認事項を一覧で見返す</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="site-view" class="deep-dive">
+        <div class="section-inner deep-grid">
+          <figure class="deep-media">
+            <img src="assets/images/feature/site-view-v2.png" alt="Machicaで現場を写真に近い3D空間として確認する画面" />
+          </figure>
+          <div class="deep-copy">
+            <span class="deep-index">01</span>
+            <h2>
+              <span class="heading-line">現場を、写真に近い</span><span class="heading-line">3D空間として確認。</span>
+            </h2>
+            <p>
+              現場や施設の状態を、画面上で自由に見回せます。写真だけでは伝わりにくい奥行きや位置関係も、同じ視点で共有できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="model-overlay" class="deep-dive deep-alt section-pale">
+        <div class="section-inner deep-grid">
+          <div class="deep-copy">
+            <span class="deep-index">02</span>
+            <h2>
+              <span class="heading-line">設計モデルを重ねて、</span><span class="heading-line">ズレや完成後の</span><span class="heading-line">見え方を確認。</span>
+            </h2>
+            <p>
+              現況の上に設計モデルや設備モデルを重ねて表示できます。配置後の見え方を事前に確認し、説明や合意形成に役立てられます。
+            </p>
+          </div>
+          <figure class="deep-media overlay-visual">
+            <img src="assets/images/feature/model-overlay-v2.png" alt="Machicaで設計モデルを重ねて確認する画面" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="comments-share" class="deep-dive">
+        <div class="section-inner deep-grid">
+          <figure class="deep-media">
+            <img src="assets/images/feature/comments-share-v2.png" alt="Machicaでコメント、資料添付、URL共有を行う画面" />
+          </figure>
+          <div class="deep-copy">
+            <span class="deep-index">03</span>
+            <h2>
+              <span class="heading-line">指摘や資料を</span><span class="heading-line">3D上に残し、</span><span class="heading-line">確認の往復を減らす。</span>
+            </h2>
+            <p>
+              伝えたい場所にコメントや資料を紐づけることで、確認事項が散らばりにくくなります。URL共有で、相手も同じ視点から確認できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="flow section-blue">
+        <div class="section-inner">
+          <div class="section-heading align-left">
+            <h2>導入ステップ</h2>
+            <p>撮る、つくる、重ねる、共有する。現場確認に必要な流れをシンプルに進めます。</p>
+          </div>
+          <div class="flow-steps">
+            <article>
+              <span class="flow-number">1</span>
+              <svg class="flow-icon site-icon" data-icon-label="現場撮影" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z" />
+                <circle cx="12" cy="13" r="3.5" />
+              </svg>
+              <h3>現場撮影</h3>
+              <p>市販のカメラ、ハンディスキャナ、ドローンを用いて現場データを取得。</p>
+            </article>
+            <article>
+              <span class="flow-number">2</span>
+              <svg class="flow-icon site-icon" data-icon-label="3DGS生成" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                <path d="M20 2v4" />
+                <path d="M22 4h-4" />
+                <circle cx="4" cy="20" r="2" />
+              </svg>
+              <h3>3DGS生成</h3>
+              <p>撮影データから、実写のようにリアルな3D空間を自動生成。</p>
+            </article>
+            <article>
+              <span class="flow-number">3</span>
+              <svg class="flow-icon site-icon" data-icon-label="デジタルツイン化" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M12 2 3 7l9 5 9-5-9-5Z" />
+                <path d="m3 12 9 5 9-5" />
+                <path d="m3 17 9 5 9-5" />
+                <path d="M16.5 8.5 12 11 7.5 8.5" />
+              </svg>
+              <h3>デジタルツイン化</h3>
+              <p>BIM/CIMモデルや現場資料を3D空間に重ね合わせ、現実と設計の差分を可視化します。</p>
+            </article>
+            <article>
+              <span class="flow-number">4</span>
+              <svg class="flow-icon site-icon" data-icon-label="活用・共有" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+              <h3>活用・共有</h3>
+              <p>URLの共有で関係者全員が同じ空間を確認。意思決定のスピードを最大化します。</p>
+            </article>
+          </div>
+          <a class="btn btn-light" href="#contact">まずは相談する</a>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="partners-bg" aria-hidden="true"></div>
+        <div class="section-inner partner-copy">
+          <h2>
+            <span class="heading-line">Machicaを現場で</span><span class="heading-line">一緒に磨く</span><span class="heading-line">パートナーを</span><span class="heading-line">募集しています。</span>
+          </h2>
+          <p>
+            実際の現場での活用を通じて、機能改善や運用方法の検証にご協力いただける企業・団体を募集しています。
+          </p>
+          <a class="btn btn-primary" href="#contact">実証利用について相談する</a>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section-pale">
+        <div class="section-inner narrow">
+          <h2>よくあるご質問</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <button type="button">専用アプリは必要ですか？</button>
+              <p>閲覧はブラウザで利用できます。詳しい対応環境は用途に合わせて確認します。</p>
+            </article>
+            <article class="faq-item">
+              <button type="button">どのようなデータを使えますか？</button>
+              <p>現場の3Dデータや設計モデルなどを、用途に合わせて扱います。</p>
+            </article>
+            <article class="faq-item">
+              <button type="button">スマートフォンでも見られますか？</button>
+              <p>スマホ向けの表示にも対応する方向です。大きなデータは軽量版の準備が前提になる場合があります。</p>
+            </article>
+            <article class="faq-item">
+              <button type="button">コメントや資料は共有できますか？</button>
+              <p>3D空間上に指摘や資料を残し、関係者と共有できます。</p>
+            </article>
+            <article class="faq-item">
+              <button type="button">β版でも相談できますか？</button>
+              <p>はい。実証利用や機能改善に協力いただけるパートナーを募集しています。</p>
+            </article>
+            <article class="faq-item">
+              <button type="button">面積計測はできますか？</button>
+              <p>公開前に最新仕様を確認し、LP表現を確定します。現時点では距離計測を中心に掲載しています。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-blue">
+        <div class="contact-bg" aria-hidden="true"></div>
+        <div class="contact-card">
+          <h2><span class="heading-line">Machicaを体験して</span><span class="heading-line">みませんか？</span></h2>
+          <p>資料請求、デモ相談、実証利用相談はこちらからお問い合わせください。</p>
+          <div class="ma-form-embed" aria-label="お問い合わせフォーム">
+            <script type="text/javascript">var K3_acct = "worldareanetworks";var K3_campcode = "contact_Machica";var K3_organized = 0;var K3_width = "auto";var K3_height = "auto";</script>
+            <script type="text/javascript" src="https://info.wan-hiroshima.jp/form/embed/"></script>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/images/machica-logo-blue.png" alt="Machica" />
+        <p>株式会社ワールドエリアネットワークス</p>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="#features">機能</a>
+        <a href="#scenes">活用シーン</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+      <small>&copy; World Area Networks Inc.</small>
+    </footer>
+
+    <div class="video-modal" aria-hidden="true" role="dialog" aria-label="Machicaデモ動画">
+      <div class="video-modal-backdrop"></div>
+      <div class="video-modal-content">
+        <button class="modal-close" type="button" aria-label="閉じる">×</button>
+        <video class="modal-video" controls playsinline preload="metadata" poster="assets/images/feature/model-overlay-v2.png">
+          <source src="assets/videos/machica-demo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

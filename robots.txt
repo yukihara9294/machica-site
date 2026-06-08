@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://machica.wan-hiroshima.jp/sitemap.xml
