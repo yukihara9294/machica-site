@@ -93,17 +93,14 @@ function openVideoModal(event) {
   videoModal?.setAttribute('aria-hidden', 'false');
   document.body.classList.add('modal-open');
   closeVideoButton?.focus();
-  modalVideo?.play().catch(() => {});
+  if (modalVideo) modalVideo.src = modalVideo.dataset.embedSrc;
 }
 
 function closeVideoModal() {
   videoModal?.classList.remove('is-open');
   videoModal?.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('modal-open');
-  if (modalVideo) {
-    modalVideo.pause();
-    modalVideo.currentTime = 0;
-  }
+  if (modalVideo) modalVideo.src = 'about:blank';
   if (lastVideoTrigger instanceof HTMLElement) lastVideoTrigger.focus();
 }
 
